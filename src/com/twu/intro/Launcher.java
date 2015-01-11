@@ -9,6 +9,8 @@ public class Launcher {
 
         new HorizontalLine().print(8);
 
+        new VerticalLine().print(10);
+
         new RightTriangle().print(5);
 
         new IsoscelesTriangle().print(3);

@@ -2,9 +2,6 @@ package com.twu.intro;
 
 import java.util.ArrayList;
 
-/**
- * Created by nishkarshsharma on 11/01/15.
- */
 public class PrimeFactors {
 
     public ArrayList<Integer> generate(int number) {

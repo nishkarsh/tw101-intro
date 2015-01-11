@@ -4,8 +4,9 @@ public class DiamondWithName {
     public void print(int depth) {
 
         int centreSize = (2 * depth) - 1;
+        int iterations = depth - 1;
 
-        for (int i = 0; i < depth - 1; i++) {
+        for (int i = 0; i < iterations; i++) {
             int asteriskCount = (2 * i) + 1;
             int numSpaces = (centreSize - asteriskCount) / 2;
 
@@ -19,8 +20,6 @@ public class DiamondWithName {
         }
 
         System.out.println("Nishkarsh");
-
-        int iterations = depth - 1;
 
         for (int i = iterations; i > 0; i--) {
             int asteriskCount = (2 * i) - 1;

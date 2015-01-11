@@ -1,9 +1,5 @@
 package com.twu.intro;
 
-/**
- * Created by nishkarshsharma on 11/01/15.
- */
-
 public class FizzBuzz {
 
     public void print() {
