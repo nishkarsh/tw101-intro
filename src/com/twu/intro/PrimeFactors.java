@@ -15,7 +15,7 @@ public class PrimeFactors {
             return primeFactorsList;
         }
 
-        private boolean isPrime(int number) {
+    private boolean isPrime(int number) {
             for (int i = 2; i < number; i++) {
                 if (isFactor(number, i))
                     return false;
@@ -24,7 +24,7 @@ public class PrimeFactors {
             return true;
         }
 
-        private boolean isFactor(int firstNumber, int secondNumber) {
+    private boolean isFactor(int firstNumber, int secondNumber) {
             return firstNumber % secondNumber == 0;
         }
-    }
+}
