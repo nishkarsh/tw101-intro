@@ -1,5 +1,7 @@
 package com.twu.intro;
 
+import java.util.ArrayList;
+
 public class Launcher {
 
     public static void main(String[] args) {
@@ -16,5 +18,9 @@ public class Launcher {
         new DiamondWithName().print(4);
 
         new FizzBuzz().print();
+
+        ArrayList<Integer> primeFactors= new ArrayList<Integer>();
+        primeFactors = new PrimeFactors().generate(30);
+        System.out.print(primeFactors);
     }
 }

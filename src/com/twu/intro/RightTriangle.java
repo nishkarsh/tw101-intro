@@ -1,11 +1,15 @@
 package com.twu.intro;
 
 public class RightTriangle {
-    public void print(int n) {
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j <= i; j++) {
+
+    public void print(int height) {
+
+        for (int lineNumber = 0; lineNumber < height; lineNumber++) {
+
+            for (int numAsterisk = 0; numAsterisk <= lineNumber; numAsterisk++) {
                 System.out.print("*");
             }
+
             System.out.println();
         }
     }

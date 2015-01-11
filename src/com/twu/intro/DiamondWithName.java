@@ -1,15 +1,15 @@
 package com.twu.intro;
 
 public class DiamondWithName {
-    public void print(int height) {
+    public void print(int depth) {
 
-        int centreSize = (2 * height) - 1;
+        int centreSize = (2 * depth) - 1;
 
-        for (int i = 0; i < height - 1; i++) {
+        for (int i = 0; i < depth - 1; i++) {
             int asteriskCount = (2 * i) + 1;
-            int whiteSpace = (centreSize - asteriskCount) / 2;
+            int numSpaces = (centreSize - asteriskCount) / 2;
 
-            for (int j = 0; j < whiteSpace; j++)
+            for (int j = 0; j < numSpaces; j++)
                 System.out.print(" ");
 
             for (int k = 0; k < asteriskCount; k++)
@@ -20,13 +20,13 @@ public class DiamondWithName {
 
         System.out.println("Nishkarsh");
 
-        int iterations = height - 1;
+        int iterations = depth - 1;
 
         for (int i = iterations; i > 0; i--) {
             int asteriskCount = (2 * i) - 1;
-            int whiteSpace = (centreSize - asteriskCount) / 2;
+            int numSpaces = (centreSize - asteriskCount) / 2;
 
-            for (int j = 0; j < whiteSpace; j++)
+            for (int j = 0; j < numSpaces; j++)
                 System.out.print(" ");
 
             for (int k = 0; k < asteriskCount; k++)

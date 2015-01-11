@@ -1,24 +1,33 @@
 package com.twu.intro;
 
 public class DiamondPattern {
-    public void print(int n) {
+    public void print(int depth) {
 
-        for (int i = 1; i < n * 2 -1; i = i+2) {
-            for(int j = 1; j < n - i / 2; j++) {
+        int centreSize = (2 * depth) - 1;
+
+        for (int i = 0; i < depth; i++) {
+            int numAsterisk = (2 * i) + 1;
+            int numSpaces = (centreSize - numAsterisk) / 2;
+
+            for (int j = 0; j < numSpaces; j++)
                 System.out.print(" ");
-            }
-            for (int j = 1; j <= i; j++) {
+
+            for (int k = 0; k < numAsterisk; k++)
                 System.out.print("*");
-            }
 
             System.out.println();
         }
 
-        for (int i = n * 2 - 4 ; i > 0; i -= 2) {
-            for (int j = 1; j < n - i / 2; j++)
+        int iterations = depth - 1;
+
+        for (int i = iterations; i > 0; i--) {
+            int numAsterisk = (2 * i) - 1;
+            int numSpaces = (centreSize - numAsterisk) / 2;
+
+            for (int j = 0; j < numSpaces; j++)
                 System.out.print(" ");
 
-            for (int j = 1; j <= i; j++)
+            for (int k = 0; k < numAsterisk; k++)
                 System.out.print("*");
 
             System.out.println();

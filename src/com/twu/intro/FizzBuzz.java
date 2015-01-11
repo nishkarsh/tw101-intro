@@ -3,18 +3,33 @@ package com.twu.intro;
 /**
  * Created by nishkarshsharma on 11/01/15.
  */
+
 public class FizzBuzz {
+
     public void print() {
-        for (int i = 1; i <= 100; i++) {
-            if((i % 3 == 0) && (i % 5 == 0)) {
+
+        for (int number = 1; number <= 100; number++) {
+
+            if(isDivisibleByThree(number) && isDivisibleByFive(number)) {
                 System.out.println("FizzBuzz");
-            } else if(i % 3 == 0) {
+            }
+            else if(isDivisibleByThree(number)) {
                 System.out.println("Fizz");
-            } else if(i % 5 == 0) {
+            }
+            else if(isDivisibleByFive(number)) {
                 System.out.println("Buzz");
-            } else {
-                System.out.println(i);
+            }
+            else {
+                System.out.println(number);
             }
         }
+    }
+
+    private boolean isDivisibleByThree(int number) {
+        return number % 3 == 0;
+    }
+
+    private boolean isDivisibleByFive(int number) {
+        return number % 5 == 0;
     }
 }
